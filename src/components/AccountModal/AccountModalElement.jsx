@@ -35,18 +35,6 @@ export const AccountWrapper = styled.div`
   align-items: center;
 `;
 
-export const AccountAvartar = styled.div`
-  width: 45px;
-  height: 45px;
-  background: #b4beca;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 30px;
-`;
-
 export const AccountInfo = styled.div`
   width: 100%;
   display: flex;
@@ -78,7 +66,6 @@ export const AccountButtons = styled.div`
   border-bottom: 1px solid #dce4ed;
 `;
 
-// Link로 변경
 export const AccountButton = styled(Link)`
   width: 100%;
   margin: 16px 0px 16px 24px;

@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useCallback } from "react";
+import Avatar from "../Avatar/Avatar.jsx";
 
 import {
   AccountContainer,
   AccountWrapper,
-  AccountAvartar,
   AccountInfo,
   AccountName,
   AccountEmail,
@@ -12,7 +12,7 @@ import {
   Background,
 } from "./AccountModalElement.jsx";
 
-const AccountModal = ({ showModal, setShowModal }) => {
+const AccountModal = ({ user, showModal, setShowModal }) => {
   const modalRef = useRef();
 
   const closeModal = (e) => {
@@ -41,10 +41,10 @@ const AccountModal = ({ showModal, setShowModal }) => {
         <Background ref={modalRef} onClick={closeModal}>
           <AccountContainer>
             <AccountWrapper>
-              <AccountAvartar>T</AccountAvartar>
+              <Avatar user={user} />
               <AccountInfo>
-                <AccountName>YeHwan Oh</AccountName>
-                <AccountEmail>yehwan_oh@tmax.co.kr</AccountEmail>
+                <AccountName>{user.name}</AccountName>
+                <AccountEmail>{user.email}</AccountEmail>
               </AccountInfo>
             </AccountWrapper>
             <AccountButtons>

@@ -65,17 +65,5 @@ export const NavVerticalLine = styled.div`
   background-color: #dce4ed;
   width: 1px;
   height: 18px;
-`;
-
-export const NavAvartar = styled.div`
-  background-color: #b4beca;
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-left: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  margin-right: 14px;
 `;

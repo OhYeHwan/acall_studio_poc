@@ -7,11 +7,11 @@ import {
   NavInfo,
   NavButton,
   NavVerticalLine,
-  NavAvartar,
 } from "./NavbarElements.jsx";
 import { AccountModal } from "../index";
+import Avatar from "../Avatar/Avatar.jsx";
 
-const Navbar = () => {
+const Navbar = ({ user }) => {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
     setShowModal((prev) => !prev);
@@ -27,8 +27,12 @@ const Navbar = () => {
         <NavInfo>
           <NavButton to="/myproject">My Acall</NavButton>
           <NavVerticalLine />
-          <NavAvartar onClick={openModal}>T</NavAvartar>
-          <AccountModal showModal={showModal} setShowModal={setShowModal} />
+          <Avatar user={user} onClick={openModal} />
+          <AccountModal
+            user={user}
+            showModal={showModal}
+            setShowModal={setShowModal}
+          />
         </NavInfo>
       </NavbarContainer>
     </Nav>
