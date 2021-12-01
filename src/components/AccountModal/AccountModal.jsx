@@ -48,10 +48,16 @@ const AccountModal = ({ showModal, setShowModal }) => {
               </AccountInfo>
             </AccountWrapper>
             <AccountButtons>
-              <AccountButton>계정설정</AccountButton>
-              <AccountButton>도움말</AccountButton>
+              <AccountButton to="/" onClick={() => setShowModal(false)}>
+                계정설정
+              </AccountButton>
+              <AccountButton to="/" onClick={() => setShowModal(false)}>
+                도움말
+              </AccountButton>
             </AccountButtons>
-            <AccountButton>로그아웃</AccountButton>
+            <AccountButton to="/" onClick={() => setShowModal(false)}>
+              로그아웃
+            </AccountButton>
           </AccountContainer>
         </Background>
       ) : null}

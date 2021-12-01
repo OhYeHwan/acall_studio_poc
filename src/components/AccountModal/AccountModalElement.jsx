@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Background = styled.div`
   position: fixed;
@@ -78,10 +79,16 @@ export const AccountButtons = styled.div`
 `;
 
 // Link로 변경
-export const AccountButton = styled.div`
+export const AccountButton = styled(Link)`
   width: 100%;
   margin: 16px 0px 16px 24px;
   color: #1e1f21;
   font-weight: 500;
   font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: pink;
+  }
 `;
