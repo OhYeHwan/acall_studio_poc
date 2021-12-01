@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Nav,
   NavbarContainer,
@@ -8,9 +8,15 @@ import {
   NavButton,
   NavVerticalLine,
   NavAvartar,
-} from "./NavbarElements";
+} from "./NavbarElements.jsx";
+import { AccountModal } from "../index";
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal((prev) => !prev);
+  };
+
   return (
     <Nav>
       <NavbarContainer>
@@ -21,7 +27,8 @@ const Navbar = () => {
         <NavInfo>
           <NavButton to="/myproject">My Acall</NavButton>
           <NavVerticalLine />
-          <NavAvartar>T</NavAvartar>
+          <NavAvartar onClick={openModal}>T</NavAvartar>
+          <AccountModal showModal={showModal} setShowModal={setShowModal} />
         </NavInfo>
       </NavbarContainer>
     </Nav>

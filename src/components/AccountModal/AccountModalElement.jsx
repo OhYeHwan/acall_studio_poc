@@ -1,7 +1,21 @@
 import styled from "styled-components";
 
+export const Background = styled.div`
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+`;
+
 export const AccountContainer = styled.div`
-  width: 294px;
+  position: absolute;
+  top: 45px;
+  right: 27px;
+  width: 254px;
   height: 253px;
   background-color: #fff;
   border: 1px solid #e6e8ec;
@@ -13,15 +27,16 @@ export const AccountContainer = styled.div`
 
 export const AccountWrapper = styled.div`
   width: 100%;
-  padding: 16px;
+  padding: 16px 0px 16px 16px;
+  margin-right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const AccountAvartar = styled.div`
-  width: 53px;
-  height: 53px;
+  width: 45px;
+  height: 45px;
   background: #b4beca;
   display: flex;
   justify-content: center;
@@ -35,13 +50,15 @@ export const AccountInfo = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 14px;
+  padding: 14px 0px 14px 14px;
 `;
 
 export const AccountName = styled.h1`
   font-style: normal;
   font-weight: bold;
+  color: #000;
   font-size: 18px;
+  cursor: default;
 `;
 
 export const AccountEmail = styled.p`
@@ -49,6 +66,7 @@ export const AccountEmail = styled.p`
   font-weight: normal;
   font-size: 12px;
   color: #5f6368;
+  cursor: default;
 `;
 
 export const AccountButtons = styled.div`
@@ -62,7 +80,7 @@ export const AccountButtons = styled.div`
 // Link로 변경
 export const AccountButton = styled.div`
   width: 100%;
-  padding: 16px 0px 16px 24px;
+  margin: 16px 0px 16px 24px;
   color: #1e1f21;
   font-weight: 500;
   font-size: 14px;

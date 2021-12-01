@@ -6,7 +6,7 @@ import {
   ProjectInfoTitle,
   ProjectInfoDescription,
   ProjectListContainer,
-} from "./ProjectSectionElement";
+} from "./ProjectSectionElement.jsx";
 
 const ProjectSection = (props) => {
   return (

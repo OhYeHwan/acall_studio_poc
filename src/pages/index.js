@@ -1,2 +1,2 @@
-export { default as Main } from "./MainPage/Main";
-export { default as MyProject } from "./MyProjectPage/MyProject";
+export { default as Main } from "./MainPage/Main.jsx";
+export { default as MyProject } from "./MyProjectPage/MyProject.jsx";

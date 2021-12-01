@@ -6,7 +6,7 @@ import {
   SearchInputForm,
   SearchIcon,
   SearchInput,
-} from "./SearchbarElements";
+} from "./SearchbarElements.jsx";
 
 const Searchbar = (props) => {
   const [value, setValue] = useState("");
