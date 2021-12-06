@@ -7,6 +7,7 @@ import {
   ProjectInfoDescription,
   ProjectListContainer,
 } from "./ProjectSectionElement.jsx";
+import { ProjectItemList } from "../";
 
 const ProjectSection = (props) => {
   return (
@@ -18,7 +19,9 @@ const ProjectSection = (props) => {
             프로젝트 대시보드를 확인하려면 편집할 Acall 프로젝트를 선택하세요
           </ProjectInfoDescription>
         </ProjectInfo>
-        <ProjectListContainer></ProjectListContainer>
+        <ProjectListContainer>
+          <ProjectItemList />
+        </ProjectListContainer>
       </ProjectContainer>
     </ProjectSec>
   );
