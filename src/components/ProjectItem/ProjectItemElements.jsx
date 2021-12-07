@@ -44,12 +44,18 @@ export const ProjectTitle = styled.h1`
   color: #1e1f21;
 `;
 
-export const ProjectSwitch = styled.div`
-  margin-right: 28px;
-  width: 28px;
-  height: 16px;
-  background: #9fb0bf;
-  border-radius: 16px;
+export const SwitchWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SwitchTitle = styled.p`
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #9a9fa3;
+  margin-right: 6px;
 `;
 
 export const ProjectDescription = styled.p`

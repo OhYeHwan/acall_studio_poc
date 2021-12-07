@@ -6,10 +6,12 @@ import {
   ProjectInfo,
   ProjectHeader,
   ProjectTitle,
-  ProjectSwitch,
   ProjectDescription,
   ProjectState,
+  SwitchWrapper,
+  SwitchTitle,
 } from "./ProjectItemElements.jsx";
+import { Switch } from "../index.js";
 
 const ProjectItem = ({ title, description, date }) => {
   return (
@@ -20,7 +22,10 @@ const ProjectItem = ({ title, description, date }) => {
       <ProjectInfo>
         <ProjectHeader>
           <ProjectTitle>{title}</ProjectTitle>
-          <ProjectSwitch></ProjectSwitch>
+          <SwitchWrapper>
+            <SwitchTitle>스토어 업로드</SwitchTitle>
+            <Switch />
+          </SwitchWrapper>
         </ProjectHeader>
         <ProjectDescription>{description}</ProjectDescription>
         <ProjectState>{date}</ProjectState>
