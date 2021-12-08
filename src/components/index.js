@@ -7,3 +7,5 @@ export { default as Card } from "./Card/Card.jsx";
 export { default as ProjectItemList } from "./ProjectItemList/ProjectItemList.jsx";
 export { default as ProjectItem } from "./ProjectItem/ProjectItem.jsx";
 export { default as Switch } from "./Switch/Switch.jsx";
+export { default as MoreButton } from "./MoreButton/MoreButton.jsx";
+export { default as Menu } from "./Menu/Menu.jsx";
