@@ -3,7 +3,6 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
   NavInfo,
   NavButton,
   NavVerticalLine,
@@ -20,10 +19,7 @@ const Navbar = ({ user }) => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">
-          <NavIcon />
-          Acall Studio
-        </NavLogo>
+        <NavLogo to="/">Acall Studio</NavLogo>
         <NavInfo>
           <NavButton to="/myproject">My Acall</NavButton>
           <NavVerticalLine />

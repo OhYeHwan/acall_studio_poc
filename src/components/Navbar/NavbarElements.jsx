@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FaMagento } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
@@ -31,10 +30,6 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   margin-left: 20px;
-`;
-
-export const NavIcon = styled(FaMagento)`
-  margin-right: 0.5rem;
 `;
 
 export const NavInfo = styled.div`

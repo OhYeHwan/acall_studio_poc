@@ -21,3 +21,33 @@ export const MenuWrapper = styled.div`
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.18);
   border-radius: 10px;
 `;
+
+export const MenuItemList = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px 16px 20px;
+`;
+
+export const MenuItem = styled.button`
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    background-color: rgba(224, 224, 224, 0.4);
+  }
+`;
+
+export const MenuItemTitle = styled.h1`
+  font-size: 14px;
+  color: #1e1f21;
+  margin: 4px 0px 4px 8px;
+`;

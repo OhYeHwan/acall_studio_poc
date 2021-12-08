@@ -9,3 +9,6 @@ export { default as ProjectItem } from "./ProjectItem/ProjectItem.jsx";
 export { default as Switch } from "./Switch/Switch.jsx";
 export { default as MoreButton } from "./MoreButton/MoreButton.jsx";
 export { default as Menu } from "./Menu/Menu.jsx";
+export { default as UploadModal } from "./UploadModal/UploadModal.jsx";
+export { default as ProjectPlus } from "./ProjectPlus/ProjectPlus.jsx";
+export { default as ProjectInputForm } from "./ProjectInputForm";
