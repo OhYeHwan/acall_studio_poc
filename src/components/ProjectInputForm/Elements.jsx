@@ -43,3 +43,72 @@ export const Container = styled.div`
   border-radius: 10px;
   display: flex;
 `;
+
+export const Form = styled.form`
+  width: 430px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Graphic = styled.div`
+  width: 508px;
+  height: 100%;
+  background: #000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+`;
+
+export const ProgressBar = styled.div`
+  width: 300px;
+  height: 8px;
+  background: #000;
+`;
+
+export const Title = styled.h1`
+  font-size: 20px;
+  color: #1e1f21;
+`;
+
+export const Description = styled.p`
+  font-size: 12px;
+  color: #5f6368;
+`;
+
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 48px;
+`;
+
+export const Label = styled.p`
+  font-weight: 500;
+  font-size: 12px;
+  color: #1e1f21;
+`;
+
+export const Input = styled.input`
+  width: 320px;
+  height: 40px;
+  border: 1px solid #a7acb1;
+  border-radius: 4px;
+  padding-left: 12px;
+`;
+
+export const ImgUpload = styled.div`
+  width: 320px;
+  height: 71px;
+  background: #f8f9f9;
+  border: 1px solid #a7acb1;
+  border-radius: 4px;
+`;
+
+export const Button = styled.button`
+  width: 320px;
+  height: 40px;
+  background: #1e1f21;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  outline: none;
+`;

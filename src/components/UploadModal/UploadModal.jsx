@@ -46,7 +46,7 @@ const UploadModal = ({
         <UploadCard>
           <UploadCardTitle>스토어 업로드를 해제하시겠습니까?</UploadCardTitle>
           <UploadButtonWrapper>
-            <UploadButton onClick={onChangeUploadState}>
+            <UploadButton primary onClick={onChangeUploadState}>
               업로드 해제하기
             </UploadButton>
             <UploadButton onClick={() => setSwitchModal(false)}>
