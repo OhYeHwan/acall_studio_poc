@@ -62,7 +62,7 @@ export const Graphic = styled.div`
 
 export const ProgressBar = styled.div`
   width: 300px;
-  height: 8px;
+  height: 2px;
   background: #000;
   margin-top: 45px;
 `;
