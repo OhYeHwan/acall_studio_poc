@@ -49,6 +49,7 @@ export const Form = styled.form`
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: 48px;
 `;
 
 export const Graphic = styled.div`
@@ -63,9 +64,11 @@ export const ProgressBar = styled.div`
   width: 300px;
   height: 8px;
   background: #000;
+  margin-top: 45px;
 `;
 
 export const Title = styled.h1`
+  margin-top: 60px;
   font-size: 20px;
   color: #1e1f21;
 `;
@@ -78,7 +81,7 @@ export const Description = styled.p`
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 48px;
+  margin-top: 22px;
 `;
 
 export const Label = styled.p`
@@ -111,4 +114,5 @@ export const Button = styled.button`
   color: #fff;
   border: none;
   outline: none;
+  margin-top: 40px;
 `;
